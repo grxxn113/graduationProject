@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <script src="https://kit.fontawesome.com/9805a1e1da.js" crossorigin="anonymous"></script>
+    <title>Im water</title>
+</head>
+<body>
+    <section class="header">
+        <div class="menuBox">
+            <h1>
+                <a href="./index.html">I'm water</a>
+            </h1>
+            <div class="menuBar">
+                <div class="login">
+                    <a href="./login.html">login</a>
+                </div>
+                <div class="menu">
+                    <i class="fas fa-bars menuIcon"></i>
+                    <ul class="menuList">
+                        <a href="./calc.html">calcluation</a>
+                        <a href="./record.html">record</a>
+                        <a href="./about.html">about</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="mobileMenuBar">
+                <i class="fas fa-bars menuIcon mobile"></i>
+                <ul class="mobileMenuList">
+                    <i class="fas fa-times closeBtn"></i>
+                    <a href="./login.html">login</a>
+                    <a href="./calc.html">calcluation</a>
+                    <a href="./record.html">record</a>
+                    <a href="./about.html">about</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="calcDesc">
+        <p>
+            하루 동안 섭취해야 하는 물의 양은 우리 몸에서 공기 중으로 증발하는 수분의 양과 비례합니다.<br>키와 몸무게에 따라 증발하는 수분의 양이 달라지기 때문에 하루 섭취해야 하는 물의 양은 키와 몸무게를 더하고 100으로 나눈 값과 같으며, 표준 체형의 여성인 경우 2리터는 충분하다고 합니다.<br>지나치게 과하게 마실 경우에는 물 중독으로 인한 사망이라는 극단적인 사태가 발생 될 사능성도 있으니,<br>적정량 조절하여 마시는 것이 중요합니다.
+        </p>
+    </section>
+
+    <section class="calc">
+        <form action="" method="POST" class="calcForm">
+            <div class="hInput">
+                <label for="height">키</label>
+                <input type="text" id="height" name="height"> cm  
+            </div>         
+            <div class="wInput">
+                <label for="weight">몸무게</label>
+                <input type="text" id="weight" name="weight"> kg
+            </div>
+            <input type="submit" value="계산하기">
+        </form>
+        <div id="calcResult">
+            
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="followRec">
+        <p>
+            여러분에게 맞는 일일 물 섭취량을 계산하셨나요?<br>
+            계산된 섭취량을 바탕으로 여러분이 하루동안 마신 물의 양을 기록해보아요!
+        </p>
+        <a href="./record.html">
+            <button>기록하기</button>
+        </a>
+    </section>
+
+    <section class="upBtn">
+        <button>
+            <i class="fas fa-chevron-circle-up upBtnIcon"></i>
+        </button>
+    </section>
+
+    <footer>
+        <p>
+            copyright@grxxn _ 2021
+        </p>
+    </footer>
+
+    <script src="../public/JS/main.js"></script>
+</body>
+</html>

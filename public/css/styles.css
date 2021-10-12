@@ -1,0 +1,1024 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+input {
+    width: 400px;
+    height: 60px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.8px solid #000;
+}
+
+input[type='submit']{
+    cursor: pointer;
+    padding: 0;
+}
+
+input::placeholder {
+    padding-left: 20px;
+}
+
+button {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 400px;
+    height: 70px;
+    background: 0 none;
+    border: 1px solid #5EC7FE;
+    border-radius: 7px;
+    font-size: 17px;
+}
+
+button:hover {
+    color: #fff;
+}
+
+button:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(84, 185, 243, 0.637);
+    transition: all 1s;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+button:hover:before {
+    height: 200%;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5EC7FE;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.menuBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+    height: 50px;
+    margin: auto;
+}
+
+.menuBox h1{
+    font-size: 1.6rem;
+}
+
+.menuBox a:hover {
+    color: #000;
+}
+
+.menuBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80px;
+}
+
+.menu {
+    position: relative;
+}
+
+
+.menuList {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    left: -300px;
+    background-color: #f8f8f8;
+    min-width: 330px;
+    border-radius: 6px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 60px 0;
+}
+
+.menuList a {
+    height: 40px;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 12px 16px;
+    margin: 2px auto;
+    display: block;
+    transition: all 0.6s;
+}
+
+.menuList a:first-child {
+    margin: 0;
+}
+
+.menuList a:hover {
+    background-color: #5ec6feb2;
+    color: #fff;
+}
+
+.menuIcon {
+    cursor: pointer;
+}
+
+.mobileMenuBar {
+    display: none;
+}
+
+/* index.html */
+
+.landing {
+    width: 100%;
+    height: 700px;
+    background-color: rgba(84, 185, 243, 0.349);
+}
+
+.landingBox {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.landingContents h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.landingContents p {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.landingImg {
+    width: 750px;
+    height: auto;
+}
+
+.features {
+    padding: 200px 0;
+}
+
+.featuresBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 88vw;
+    margin: auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: #5ec6fe60;
+    margin-bottom: 40px;
+}
+
+.imgBox img {
+    width: 212px;
+}
+
+.feature p {
+    width: 450px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(78, 78, 78);
+}
+
+
+.homeAbout {
+    width: 80vw;
+    margin: auto;
+    padding: 200px 0;
+}
+
+.aboutBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aboutBox img {
+    width: 700px;
+    height: auto;
+}
+
+.homeAboutContent {
+    width: 600px;
+}
+
+.homeAboutContent h2 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.homeAboutContent p {
+    color: #666;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    width: 600px;
+    margin-bottom: 100px;
+}
+
+.homeAboutContent button {
+    width: 550px;
+}
+
+.upBtn {
+    position: relative;
+}
+
+.upBtn button {
+    position: fixed;
+    bottom: 33px;
+    right: 20px;
+    background: none;
+    width: 68px;
+    height: 68px;
+    border: #5EC7FE 2px solid;
+    border-radius: 50%;
+}
+
+.upBtn button::before {
+    background: none;
+}
+
+.upBtnIcon {
+    font-size: 64px;
+    color: #fdfdfd;
+    background-color: #5faad8;
+}
+
+footer {
+    height: 30px;
+    background-color: #5faad8;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+/* login.html */
+
+#login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(84, 185, 243, 0.349)   ;
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox input {
+    margin-bottom: 20px;
+    width: 500px;
+    height: 70px;
+    /* border: 3px solid #268FC7; */
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.loginBox input[type='password'] {
+    margin-bottom: 80px;
+}
+
+.loginBox input[type='submit'] {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.loginBox input::placeholder {
+    padding-left: 20px;
+}
+
+
+
+
+
+/* calc.html */
+
+.calcDesc {
+    width: 100%;
+    height: auto;
+    background-color: rgba(84, 185, 243, 0.349);
+}
+
+.calcDesc p {
+    min-width: 47vw;
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: center;
+    margin: auto;
+    padding: 130px 0;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:150px 0;
+}
+
+.calcForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcForm label {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.calcForm input[type='text'] {
+    margin-right: 15px;
+    background-color: #fdfdfd;
+}
+
+.hInput {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.wInput {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 90px;
+}
+
+.calcForm input[type='submit'] {
+    border: 1px solid rgba(84, 185, 243, 0.637);
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+
+#calcResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 130px;
+    font-size: 2.4rem;
+    border: 4px dashed rgba(84, 185, 243, 0.637);
+}
+
+hr {
+    width: 60%;
+    border: 0.5px dashed rgb(160, 160, 160);
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.followRec {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.followRec p {
+    /* margin: auto; */
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    font-weight: 300;
+}
+
+
+
+/* record.html */
+
+.recSummary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.recSummary p {
+    font-size: 1.3rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.goalForm {
+    display: flex;
+    align-items: flex-end;
+}
+
+.goalForm div {
+    display: flex;
+    align-items: flex-end;
+}
+
+.goalForm label {
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
+.goalForm input {
+    width: 350px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.8px solid #000;
+}
+
+.goalForm input[type='submit'] {
+    width: 90px;
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+    margin-left: 30px;
+}
+
+.record {
+    width: 78vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px auto;
+}
+
+.water p {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.water p:last-child {
+    margin-bottom: 0;
+}
+
+.totalWater {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#waterRise {
+    width: 600px;
+    height: 600px;
+    border: 0.5px solid #666;
+    border-radius: 50%;
+    margin-bottom: 60px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+.recStore p {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 60px;
+}
+
+.goalIn {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.recStoreForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recStoreForm input[type='submit'] {
+    width: 500px;
+    height: 64px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: rgba(84, 185, 243, 0.637);
+    border: none;
+    border-radius: 5px;
+}
+
+.recStoreInput {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 60px;
+}
+
+.recStoreInput label {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+.recStoreInput input {
+    margin-right: 10px;
+    width: 350px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.8px solid #000;
+    padding-left: 20px;
+}
+
+
+/* about.html */
+.articleList {
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 170px 0;s */
+}
+
+.articleList li {
+    margin: 25px 0;
+    font-size: 1.17rem;
+    text-align: center;
+}
+
+.article {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 350px; */
+    /* justify-content: center; */
+}
+
+.article h1 {
+    font-size: 2rem;
+    margin-bottom: 100px;
+}
+
+.article p {
+    width: 40vw;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 2;
+    text-align: center;
+}
+
+
+/* media query - 모바일 버전 */
+@media screen and (max-width: 748px){
+    input {
+        width: 100px;
+        height: 45px;
+        padding-left: 12px;
+    }
+
+    input::placeholder {
+        padding-left: 12px;
+    }
+
+    button {
+        width: 400px;
+        height: 48px;
+        border-radius: 4px;
+    }
+
+    /* index.html */
+    .menuBox {
+        width: 80vw;
+    }
+
+    .menuBox h1 {
+        font-size: 1.4rem;
+    }
+
+    .menuBar {
+        display: none;
+    }
+
+    .mobileMenuBar {
+        display: block;
+        position: static;
+    }
+
+    .mobileMenuList {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f8f8f8;
+        border-radius: 6px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 0;
+    }
+
+    .mobileMenuList a {
+        height: 40px;
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 12px 16px;
+        margin: 2px auto;
+        display: block;
+    }
+
+    .mobileMenuList a:first-child {
+        margin: 2px auto;
+    }
+
+    .closeBtn {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    .landingBox {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .landingContents {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .landingContents h2 {
+        font-size: 3.7rem;
+        margin-bottom: 20px;
+    }
+
+    .landingContents p {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+
+    .landingImg {
+        width: 100vw;
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    .feature {
+        margin-bottom: 120px;
+    }
+
+    .feature:last-child {
+        margin-bottom: 0;
+    }
+
+    .feature p {
+        width: 60vw;
+        text-align: center;
+    }
+
+    .featuresBox {
+        flex-direction: column;
+    }
+
+    .imgBox {
+        width: 290px;
+        height: 290px;
+    }
+
+    .imgBox img {
+        width: 180px;
+    }
+
+    .aboutBox {
+        flex-direction: column;
+    }
+
+    .aboutBox img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .homeAbout {
+        padding: 100px 0;
+    }
+
+    .homeAboutContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .homeAboutContent h2 {
+        font-size: 5rem;
+        line-height: 1;
+        margin-bottom: 70px;
+    }
+
+    .homeAboutContent p {
+        width: 80vw;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .homeAboutContent button {
+        width: 400px;
+        margin-bottom: 100px;
+    }
+
+    .upBtn button {
+        right: 23px;
+        width: 40px;
+        height: 40px;
+    } 
+    
+    .upBtnIcon {
+        font-size: 40px;
+    }
+
+    /* login.html */
+    #login {
+        height: 88vh;
+    }
+    
+    .loginBox input {
+        width: 300px;
+        height: 50px;
+    }
+
+    .loginBox input[type='submit'] {
+        width: 320px;
+    }
+
+    /* calc.html */
+    .calcDesc p {
+        width: 80vw;
+        font-size: 1.1rem;
+        padding: 100px 0;
+    }
+
+    .calcForm input[type='submit'] {
+        width: 260px;
+    }
+
+    .followRec p {
+        width: 80vw;
+    }
+
+    /* record.html */
+    .recSummary {
+        height: auto;
+    }
+
+    .recSummary p {
+        font-size: 1.03rem;
+        font-weight: 300;
+        width: 70vw;
+        /* margin-bottom: 70px; */
+    }
+
+    .goalForm {
+        padding: 90px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goalForm label {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .goalForm input {
+        width: 180px;
+        margin-right: 10px;
+    }
+
+    .goalForm input[type='submit'] {
+        margin: 0;
+        margin-top: 40px;
+    }
+
+    .record {
+        flex-direction: column;
+    }
+
+    .water {
+        margin-bottom: 80px;
+    }
+
+    #waterRise {
+        width: 320px;
+        height: 320px;
+    }
+
+    .recStoreForm {
+        width: 100vw;
+    }
+
+    .recStoreForm input[type='submit'] {
+        width: 370px;
+    }
+
+    .recStoreInput input {
+         width: 200px;
+    }
+
+    .recStoreInput label {
+        font-size: 1.2rem;
+    }
+
+    /* about.html */
+    .article h1 {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .article p {
+        width: 80vw;
+        margin-bottom: 90px;
+    }
+}
+
+
+/* media query - 태블릿 버전*/
+@media screen and (min-width: 748px) and (max-width: 1450px) {
+    button {
+        font-size: 1.2rem;
+    }
+
+    input[type=submit]{
+        width: 450px;
+        height: 70px;
+        font-size: 3em;
+    }
+
+    footer {
+        height: 50px;
+    } 
+
+
+    .menuBox h1 {
+        font-size: 1.5rem;
+    }
+
+    .menuList {
+        min-width: 280px;
+        padding: 30px 0;
+    }
+
+    .menuList a {
+        font-size: 1.2rem;
+    }
+
+    .landingContents {
+        margin-right: 20px;
+    }
+
+    .landingContents h2 {
+        font-size: 3.9rem;
+        font-weight: 700;
+    }
+
+    .landingContents p {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    .landingImg {
+        width: 480px;
+        height: auto;
+    }
+
+    .featuresBox {
+        flex-direction: column;
+    }
+
+    .imgBox {
+        width: 380px;
+        height: 380px;
+    }
+
+    .featuresBox {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 160px;
+    }
+
+    .feature p {
+        width: 580px;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .aboutBox {
+        flex-direction: column;
+    }
+
+    .aboutBox img {
+        width: 600px;
+        height: auto;
+    }
+
+    .homeAboutContent {
+        margin-bottom: 80px;
+    }
+
+    .homeAboutContent p {
+        font-size: 1.3rem;
+        line-height: 1.85;
+    }
+
+    /* calc.html */
+
+    .calcDesc p {
+        font-size: 1.3rem;
+        width: 70vw;
+    }
+
+    .calc, .hInput label, .wInput label {
+        font-size: 1.3rem;
+    }
+
+    .calcForm input[type='text'] {
+        width: 300px;
+    }
+
+    .followRec p {
+        font-size: 1.3rem;
+    }
+
+    /* record.html */
+    .recSummary p, .goalForm label {
+        font-size: 1.16rem;
+    }
+
+    .record {
+        flex-direction: column;
+    }
+
+    .water {
+        margin-bottom: 90px;
+    }
+
+    /* about.html */
+    .article p {
+        width: 80vw;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
